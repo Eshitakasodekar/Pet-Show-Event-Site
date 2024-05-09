@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Pet Show Event</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header>
+        <h1>Pet Show Event</h1><br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="explore.html">About Us</a>
+                        <a href="contact.html">FAQs</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registration">
+        <div class="content">
+            <h2>Register Your Pet</h2>
+            <form action="#" method="POST">
+                <label for="pet-name">Pet Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required><br><br>
+                
+                <label for="pet-type">Pet Type:</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Bird</option>
+                </select><br><br>
+                
+                <label for="owner-name">Owner Name:</label>
+                <input type="text" id="owner-name" name="owner-name" required><br><br>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required><br><br>
+                
+                <input type="submit" value="Register">
+            </form>
+            <div id="successMessage" class="success-message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@petshowevent.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+            <div class="fake-events">
+                <h3>Events</h3>
+                <ul>
+                    <li><a href="#">Dog Talent Show - July 15th</a></li>
+                    <li><a href="#">Cat Fashion Parade - August 20th</a></li>
+                    <li><a href="#">Bird Singing Competition - September 10th</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Pet Show Event</p>
+        </div>
+    </footer>
+    <script src="registration.js"></script>
+</body>
+</html>
